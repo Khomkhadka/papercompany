@@ -22,9 +22,6 @@ const Index = () => {
               Sustainable, high-quality paper crafted with care for your business and creative needs.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/products" className="btn-primary">
-                Explore Products
-              </Link>
               <Link to="/contact" className="bg-transparent hover:bg-white/10 text-white font-semibold py-2 px-4 border border-white rounded transition-colors duration-300">
                 Contact Us
               </Link>
@@ -78,7 +75,7 @@ const Index = () => {
             <Card className="paper-card hover:scale-105 transition-transform duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="src/components/photo/organic.jpeg" 
+                  src="photo/organic.jpeg" 
                   alt="Premium Writing Paper" 
                   className="w-full h-full object-cover" 
                 />
@@ -96,7 +93,7 @@ const Index = () => {
             <Card className="paper-card hover:scale-105 transition-transform duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="src/components/photo/techanical.jpeg" 
+                  src="photo/techanical.jpeg" 
                   alt="Artisan Craft Paper" 
                   className="w-full h-full object-cover" 
                 />
@@ -114,7 +111,7 @@ const Index = () => {
             <Card className="paper-card hover:scale-105 transition-transform duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="src/components/photo/papers.jpeg" 
+                  src="photo/papers.jpeg" 
                   alt="Commercial Print Paper" 
                   className="w-full h-full object-cover" 
                 />

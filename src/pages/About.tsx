@@ -106,7 +106,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
               <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
                 <img 
-                  src="src/components/photo/founder.jpg" 
+                  src="photo/founder.jpg" 
                   alt="Damar Bahadur Gc" 
                   className="w-full h-full object-cover"
                 />
@@ -129,7 +129,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
                 <img 
-                  src="src/components/photo/ceo.jpg" 
+                  src="photo/ceo.jpg" 
                   alt="Lal Bahadur Gc" 
                   className="w-full h-full object-cover"
                 />
@@ -151,7 +151,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
                 <img 
-                  src="src/components/photo/manager.jpg" 
+                  src="photo/manager.jpg" 
                   alt="Kajol Karki" 
                   className="w-full h-full object-cover"
                 />
