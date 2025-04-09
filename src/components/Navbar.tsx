@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-            <img className="w-8 h-9" src="src/components/photo/companylogo.png" alt="logo"/>
+            <img className="w-8 h-9" src="photo/companylogo.png" alt="logo"/>
               <span className="text-paper-800 font-serif text-2xl font-bold"> Rapti Handmade</span>
             </Link>
           </div>

@@ -7,7 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import Map from "@/components/ui/Map";
+import emailjs from 'emailjs-com';
+import Map from '@/components/ui/Map';
 const Contact: React.FC = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -27,13 +28,59 @@ const Contact: React.FC = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     
+    
     // Show success message
     toast({
       title: "Message Sent",
       description: "Thank you for contacting us. We'll get back to you soon!",
       duration: 5000,
     });
-    
+      // Use emailjs to send the email
+      const serviceId = 'your_service_id'; // Replace with your actual service ID
+      const templateId = 'your_template_id'; // Replace with your actual template ID
+      const userId = 'your_user_id'; // Replace with your actual user ID
+  
+      // Sending the email using emailjs
+      emailjs.send(
+        serviceId,
+        templateId,
+        {
+          user_name: formData.name,
+          user_email: formData.email,
+          user_company: formData.company,
+          user_phone: formData.phone,
+          user_message: formData.message,
+        },
+        userId
+      ).then(
+        (result) => {
+          console.log(result.text);
+          // Show success message
+          toast({
+            title: "Message Sent",
+            description: "Thank you for contacting us. We'll get back to you soon!",
+            duration: 5000,
+          });
+  
+          // Reset the form
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            phone: '',
+            message: '',
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          // Show error message
+          toast({
+            title: "Error",
+            description: "There was an error sending your message. Please try again later.",
+            duration: 5000,
+          });
+        }
+      );
     // Reset form
     setFormData({
       name: '',
@@ -208,7 +255,7 @@ const Contact: React.FC = () => {
           </div>
           
           <div className="h-96 rounded-lg overflow-hidden shadow-md">
-           <Map/>
+          <Map/>
             {/* Placeholder for map - in a real implementation, you would integrate Google Maps or another map provider */}
             <div className="w-full h-full bg-paper-200 flex items-center justify-center">
               <div className="text-center">
