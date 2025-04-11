@@ -113,13 +113,22 @@ const Products = () => {
                 </li>
               </ul>
             </div>
-            {/* <div className="rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1504471478083-8b8952da14c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-                alt="Sustainable paper production" 
-                className="w-full h-auto"
-              />
-            </div> */}
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-paper-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">Experience the Rapti Handmade Paper Difference</h2>
+          <p className="text-paper-100 max-w-3xl mx-auto mb-8 text-lg">
+            Ready to discover our premium paper products? Get in touch with our team or browse our collections.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="/contact" className="bg-white text-paper-800 hover:bg-paper-100 font-semibold py-2 px-6 rounded transition-colors duration-300">
+              Contact Us
+            </a>
+            {/* <a href="/products" className="bg-transparent hover:bg-white/10 text-white font-semibold py-2 px-6 border border-white rounded transition-colors duration-300">
+              View Products
+            </a> */}
           </div>
         </div>
       </section>

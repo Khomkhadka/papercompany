@@ -242,9 +242,9 @@ const About = () => {
             <a href="/contact" className="bg-white text-paper-800 hover:bg-paper-100 font-semibold py-2 px-6 rounded transition-colors duration-300">
               Contact Us
             </a>
-            <a href="/products" className="bg-transparent hover:bg-white/10 text-white font-semibold py-2 px-6 border border-white rounded transition-colors duration-300">
+            {/* <a href="/products" className="bg-transparent hover:bg-white/10 text-white font-semibold py-2 px-6 border border-white rounded transition-colors duration-300">
               View Products
-            </a>
+            </a> */}
           </div>
         </div>
       </section>

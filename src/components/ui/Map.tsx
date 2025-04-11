@@ -1,40 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import React from "react";
+const center: [number, number] = [27.854721257860916, 82.67264918650716];
 
-// Define the center of your map (latitude and longitude)
-const mapCenter = { lat: 27.854509012709283, lng: 82.67266259727623 }; // Example: San Francisco
-
-// Define the container style for the map
-const containerStyle = {
-  width: "100%",
-  height: "400px",
-};
-
-const Map: React.FC = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  // Optional: Callback function when Google Maps script is loaded
-  const onLoad = () => {
-    setIsLoaded(true);
-  };
-
+const App = () => {
   return (
-    <LoadScript
-      googleMapsApiKey="AIzaSyAZA70sX47Mgxr-Ihw57SYSGFeBZ7dpHGM" // Replace with your Google Maps API Key
-      onLoad={onLoad}
-    >
-      {isLoaded && (
-        <GoogleMap
-          mapContainerStyle={containerStyle}
-          center={mapCenter}
-          zoom={15}
-        >
-          {/* Marker at the center */}
-          <Marker position={mapCenter} />
-        </GoogleMap>
-      )}
-    </LoadScript>
+    <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.7168376403724!2d82.67223872168367!3d27.85450915100601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3997a5133dc4307b%3A0x86332014cb2840fb!2sRAPTI%20PAPER%20%26%20HAND%20CRAFT!5e1!3m2!1sen!2snp!4v1744364009007!5m2!1sen!2snp" width="100%" height="450"  loading="lazy" ></iframe>
+   </div>
   );
 };
 
-export default Map;
+export default App;

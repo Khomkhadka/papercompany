@@ -37,7 +37,7 @@ const Index = () => {
             <div>
               <h2 className="section-heading">Crafting Excellence Since 2078</h2>
               <p className="text-paper-700 mb-6">
-                At Rapti Handmade Paper, we combine traditional craftsmanship with modern technology to create paper products that exceed expectations. Our dedication to quality and sustainability has made us a trusted partner for businesses, artists, and professionals worldwide.
+                At Rapti Handmade Paper, we combine traditional craftsmanship with modern technology to create nepali paper products that exceed expectations. Our dedication to quality and sustainability has made us a trusted partner for businesses and professionals.
               </p>
               <p className="text-paper-700 mb-6">
                 Every sheet of paper we produce undergoes rigorous quality checks to ensure consistency, durability, and superior printing performance.
@@ -64,7 +64,7 @@ const Index = () => {
       <section className="py-16 md:py-24 bg-paper-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-heading">Our Premium Paper Collections</h2>
+            <h2 className="section-heading">Our Premium Paper manufacture as</h2>
             <p className="text-paper-600 max-w-3xl mx-auto">
               Discover our range of high-quality paper products designed for various applications, from premium stationery to specialized printing paper.
             </p>
@@ -117,9 +117,8 @@ const Index = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-serif font-medium text-paper-800 mb-2">Commercial Solutions</h3>
-                <p className="text-paper-600 mb-4">
-                  High-performance paper  for commercial using, with exceptional quality and durability.
+                <h3 className="text-xl font-serif font-medium text-paper-800 mb-2">Quality Control</h3>
+                <p className="text-paper-600 mb-4">Each batch of paper undergoes rigorous testing to ensure it meets our exacting standards for consistency, durability, and performance.
                 </p>
                 
               </div>
@@ -202,9 +201,9 @@ const Index = () => {
             <Link to="/contact" className="bg-white text-paper-800 hover:bg-paper-100 font-semibold py-2 px-6 rounded transition-colors duration-300">
               Contact Us
             </Link>
-            <Link to="/products" className="bg-transparent hover:bg-white/10 text-white font-semibold py-2 px-6 border border-white rounded transition-colors duration-300">
+            {/* <Link to="/products" className="bg-transparent hover:bg-white/10 text-white font-semibold py-2 px-6 border border-white rounded transition-colors duration-300">
               Browse Products
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
