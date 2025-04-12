@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import emailjs from 'emailjs-com';
-import Map from '@/components/ui/Map';
 const Contact: React.FC = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -255,7 +254,7 @@ const Contact: React.FC = () => {
           </div>
           
           <div className="h-96 rounded-lg overflow-hidden shadow-md">
-          <Map/>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1450.3173997481804!2d82.67274502813818!3d27.854705802688393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3997a5133dc4307b%3A0x86332014cb2840fb!2sRAPTI%20PAPER%20%26%20HAND%20CRAFT!5e1!3m2!1sen!2snp!4v1744458454190!5m2!1sen!2snp" width="100%" height="400"  loading="lazy" ></iframe>
             {/* Placeholder for map - in a real implementation, you would integrate Google Maps or another map provider */}
             <div className="w-full h-full bg-paper-200 flex items-center justify-center">
               <div className="text-center">
